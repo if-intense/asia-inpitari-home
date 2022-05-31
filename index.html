@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>ASIA INPITARI HOME</title>
+
+</head>
+
+<body>
+  <nav class="flex items-center justify-between flex-wrap p-6">
+    <div class="flex items-center flex-shrink-0 text-black mr-6">
+      <span class="font-semibold text-xl tracking-tight"><img src="assets/images/ifing_beauty_logo.svg"
+          alt="IFING BEAUTY" width="120"></span>
+    </div>
+  </nav>
+  <div class="flex justify-center items-center">
+    <img src="assets/images/asia-home.png" alt="ASIA HOME">
+  </div>
+  <div class="main-area py-5 px-4">
+    <div class="lg:w-4/5 md:w-5/6 sm:w-full mx-auto">
+      <h3 class="text-center font-bold">アジアインピタリ専用 集中ケアマスク</h3>
+      <h2 class="title text-center mb-5">最強の<br class="break-on-mobile">1ステップトリートメント</h2>
+      <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <h2 class="font-bold text-xl mb-2">ABOUT 01</h2>
+
+          </div> -->
+      <!-- <div class="flex md:flex-row-reverse flex-wrap mb-5">
+        <div class="w-full md:w-3/5 px-3 py-8 text-slate-900 shadow-2xl border-2 border-lime-700 rounded-lg bg-white">
+          <h2 class="font-bold text-xl mb-2 text-center">
+            <span class="border-double border-4 border-black p-2">ABOUT 01</span>
+          </h2>
+          <h4 class="my-5 text-lg text-center">週2回の集中ケアマスクです</h4>
+          <hr>
+          <p class="leading-8 py-3 px-5">サロンメニュー「<ruby>ASIA<rt>アジア</rt></ruby> <ruby>INPITARI<rt>インピタリ</rt></ruby> トリートメント」専用のご自宅用集中ケアマスクです。週2回にご使用いただくことで、最大4週間の効果の持続を実感できます。</p>
+        </div>
+        <div class="w-full md:w-2/5">
+        </div>
+      </div>
+
+      <div class="flex md:flex-row-reverse flex-wrap mb-5">
+
+        <div class="w-full md:w-2/5">
+        </div>
+        <div class="w-full md:w-3/5 px-3 py-8 text-slate-900 shadow-2xl rounded-lg bg-white border-2 border-teal-400">
+          <h2 class="font-bold text-xl mb-2 text-center">
+            <span class="border-double border-4 border-black p-2">ABOUT 02</span>
+          </h2>
+          <h4 class="my-5 text-lg text-center">サロントリートメントの持続を上げます</h4>
+          <hr>
+          <p class="leading-8 py-3 px-5">
+            サロンメニュー「アジアインピタリトリートメント」と同じ成分で構成されている、最強の1ステップトリートメントです。</p>
+        </div>
+      </div>
+
+      <div class="flex md:flex-row-reverse flex-wrap mb-5">
+        <div class="w-full md:w-3/5 px-3 py-8 text-slate-900 shadow-2xl border-2 border-sky-700 rounded-lg bg-white">
+          <h2 class="font-bold text-xl mb-2 text-center">
+            <span class="border-double border-4 border-black p-2">ABOUT 03</span>
+          </h2>
+          <h4 class="my-5 text-lg text-center">週2回の集中ケアマスクです</h4>
+          <hr>
+          <p class="leading-8 py-3 px-5">サロントリートメントで瞬間吸着させた補修成分と保湿成分を補いながら、インカラミ効果と手触りの持続をサポートします。</p>
+        </div>
+        <div class="w-full md:w-2/5">
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+  <div class="section-01 py-12">
+    <div class="lg:w-4/5 md:w-5/6 sm:w-full mx-auto">
+      <div class="text-center">
+        <h3 class="text-2xl leading-10">アジアインピタリ専用<br>集中ケアマスク</h3>
+        <h3 class="text-2xl leading-10">「最強の1ステップトリートメント」<br>
+        ASIAインピタリホームについて</h3>
+        <div class="grid grid-cols-6 gap-4">
+          <div class="col-start-3 col-span-2">
+            <img src="assets/images/asia-inpitari.webp" alt="ASIA INPITARI">
+          </div>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 sm:grid-cols-3 gap-4 mx-auto" id="about">
+        <div class="flex" v-for="characteristic in characteristics">
+          <div :class="'bg-' + characteristic.backgroundColor + '-50'" class="asia-col my-2 py-3 px-2 sm:w-full w-4/5 mx-auto shadow-2xl rounded-md">
+            <div class="bg-blue">
+              <img :src="characteristic.image" :alt="characteristic.titleText" class="mx-auto mb-5" style="border-radius: 50%; height: 150px; width:150px;">
+            </div>
+            <h4 class="text-center mb-5 text-lg underline underline-offset-8 decoration-2 decoration-indigo-asiua">{{characteristic.titleText}}
+            </h4>
+            <div class="text text-sm leading-6">
+              {{characteristic.bodyText}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-02 py-10 bg-blue-200">
+
+
+    <div class="py-2 px-3 lg:w-3/4 md:w-5/6 sm:w-5/6 w-5/6 mx-auto">
+      <div class="grid sm:grid-cols-8">
+        <div class="px-1 m-2 lg:col-span-4 md:col-span-4 sm:col-start-2 col-span-6 my-auto">
+          <img src="assets/images/image.png" alt="ASIA インピタリ"
+            class="img-fluid">
+        </div>
+
+        <div class="px-4 py-5 m-2 lg:col-span-4 md:col-span-4 sm:col-span-8 text-slate-900 shadow-2xl border-2 border-lime-700 rounded-lg bg-white">
+          <h2 class="text-2xl my-3 text-amber-600">SALON CARE<br><span class="text-sm">サロンケア</span></h2>
+          <p class="text-sm leading-8">
+            アジアインピタリトリートメントは、トリートメントの専門メーカーがその技術を結集させて開発した、新時代を切り拓く、2ステップのサロンケアです。手軽でありながら、その効果は本格的な内部補修です。</p>
+          <p class="text-sm leading-8">その商品力が、一流サロン、有名美容師からも高く評価され、 一昨年の発売以来、2022年最新型のサロンケアとして、絶大な支持を獲得しています。</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="lg:w-3/4 md:w-5/6 sm:w-3/5 mx-auto text-center my-10 middle-text">
+      <h3 class="text-2xl leading-10">サロンケアを施術された<br>
+      お客様の実際の声</h3>
+      <i class="fa-solid fa-volume-high"></i>
+    </div>
+
+    <div class="my-10 gradient py-5">
+      <div class="lg:w-3/4 md:w-5/6 sm:w-3/5 mx-auto text-center">
+        <p class="leading-8">アジアインピタリの効果をさらに高めながら、<br>その仕上がりを持続させる、<br>それが「アジアインピタリホーム」です。</p>
+      </div>
+    </div>
+
+
+    <div class="py-2 px-3 lg:w-3/4 md:w-5/6 sm:w-5/6 w-5/6 mx-auto">
+      <div class="grid sm:grid-cols-8">
+            <div class="px-4 py-5 m-2 lg:col-span-4 md:col-span-4 sm:col-span-8 text-slate-900 shadow-2xl border-2 border-lime-700 rounded-lg bg-white">
+              <h2 class="text-2xl my-3 text-amber-600">ASIA HOME<br><span class="text-sm">ご自宅用マスク</span></h2>
+              <p class="text-sm leading-8">サロンメニュー「アジアインピタリトリートメント」を、サロンで受けた後、
+                ホームケアとしてご自宅でご使用いただくことで、サロンケアで瞬間吸着させた
+                補修成分と保湿成分を補います。</p>
+              <ul>
+                <li class="text-sm">補修成分：加水分解ケラチン</li>
+                <li class="text-sm">質感成分：ボタニカルラノリン</li>
+                <li class="text-sm">保湿成分：ゼイン/オイルシルクなど</li>
+              </ul>
+            </div>
+            <div class="px-1 m-2 lg:col-span-4 md:col-span-4 sm:col-start-2 col-span-6 my-auto">
+              <img src="assets/images/image2.jpg" alt="ASIA インピタリ"
+                class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="section-carousel">
+    <div class="title text-center">
+      <h3 class="text-red-700">「私の美髪習慣 OL編」</h3>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+      <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner relative w-full bg-slate-700 overflow-hidden">
+        <div class="carousel-item active relative float-left w-full">
+          <div class="lg:w-1/3 md:w-1/2 sm:w-3/4 w-2/3 mx-auto">
+            <img src="assets/images/manga/asia-manga1.png" class="block w-full" alt="..." />
+          </div>
+        </div>
+        <div class="carousel-item relative float-left w-full">
+          <div class="lg:w-1/3 md:w-1/2 sm:w-3/4 w-2/3 mx-auto">
+            <img src="assets/images/manga/asia-manga2.png" class="block w-full" alt="..." />
+          </div>
+        </div>
+        <div class="carousel-item relative float-left w-full">
+          <div class="lg:w-1/3 md:w-1/2 sm:w-3/4 w-2/3 mx-auto">
+            <img src="assets/images/manga/asia-manga3.png" class="block w-full" alt="..." />
+          </div>
+        </div>
+        <div class="carousel-item relative float-left w-full">
+          <div class="lg:w-1/3 md:w-1/2 sm:w-3/4 w-2/3 mx-auto">
+            <img src="assets/images/manga/asia-manga4.png" class="block w-full" alt="..." />
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+        type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+        type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="section-03 py-5">
+    <h2 class="text-center text-2xl my-3 underline">HOW TO USE</h2>
+    <p class="text-center text-xl my-2 text-lime-700">週2回の集中ケアマスク</p>
+    <h1 class="text-center text-3xl text-slate-500 mt-5 asia-title"><span class="asia-inpitari p-3"><ruby>ASIA<rt class="text-cyan-600">アジア</rt></ruby> <ruby>INPITARI<rt class="text-cyan-600">インピタリ</rt></ruby> <ruby>HOME
+      <rt class="text-cyan-600">ホーム</rt></ruby></span></h3>
+    <div class="container mx-auto">
+      <div class="w-11/12 mx-auto my-5">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-3 px-5" id="steps">
+          <div v-for="step in steps2use" class="flex stepsArea">
+            <div :class="'bg-' + step.backgroundColor + '-50'" class="md:flex-1 py-4 px-2 m-2 relative rounded shadow-lg border-b border-r border-grey-dark">
+              <div class="steps mb-3 -rotate-45 absolute top-2 -left-2">
+                <span class="bg-lime-200 text-lg uppercase shadow-lg px-2">Step {{step.id}}</span>
+              </div>
+              <img :src="step.image" alt="アジアインピタリ" class="rounded-full shadow-2xl">
+              <p class="text-sm mt-4 py-2 px-3">{{step.bodyText}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4 class="text-center mt-10 mb-8">いつものトリートメントの代わりに<br class="break-on-mobile">後は乾かすだけ!!</h4>
+    <div class="container md:w-2/3 mx-auto">
+      <div class="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-2 px-5">
+        <div class="p-1 place-content-center"><img src="assets/images/before-after-1.jpg" alt=""
+            class="img-fluid rounded-lg"></div>
+        <div class="p-1 place-content-center"><img src="assets/images/before-after-2.jpg" alt=""
+            class="img-fluid rounded-lg"></div>
+        <!-- <div class="p-1 place-content-center"><img src="https://dummyimage.com/300x200/a17ca1/fff.png&text=After+Image" alt=""
+            class="img-fluid rounded-lg"></div>
+        <div class="p-1 place-content-center"><img src="https://dummyimage.com/300x200/a17ca1/fff.png&text=After+Image" alt=""
+            class="img-fluid rounded-lg"></div> -->
+      </div>
+    </div>
+  </div>
+  <div class="section-04 px-2 py-9">
+    <div class="container mx-auto">
+      <div class="lg:w-4/5 md:5/6 mx-auto py-5">
+        <h3 class="text-center text-2xl underline">実はこんな声も！</h3>
+        <div class="my-5 lg:w-4/5 md:5/6 mx-auto">
+          <div class="grid grid-cols-2 gap-4 mx-auto">
+            <div class="text-center py-5 px-2 shadow-xl bg-orange-50 rounded-lg">
+              <div class="img w-2/3 mx-auto">
+                <img src="assets/images/tokio-voice-01.jpg" alt="ASIA INPITARI" class="rounded-full mx-auto mb-5">
+              </div>
+              <div class="bg-white shadow-sm">
+                <p class="text-sm py-3 px-2">〇〇サロンと△△サロンで、同じトリートメントを受けたのに仕上がりが違う！</p>
+              </div>
+            </div>
+            <div class="text-center py-5 px-2 shadow-xl bg-orange-50 rounded-lg">
+              <div class="img w-2/3 mx-auto">
+                <img src="assets/images/tokio-voice-02.jpg" alt="ASIA INPITARI" class="rounded-full mx-auto mb-5">
+              </div>
+              <div class="bg-white shadow-sm">
+                <p class="text-sm py-3 px-2">前回にやった時と比べて、トリートメントの持続が違う。ホームケアって大切なんだ！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="mt-10 mb-2 text-center"><span class="py-4 px-4 text-xl text-white bg-gray-800"><ruby>ASIA<rt>アジア</rt></ruby>
+            <ruby>INPITARI<rt>インピタリ</rt></ruby>トリートメント</span></h2>
+        <h3 class="text-center pt-3">成功サロン様は<br>ASIA INPITARI HOMEを<br class="break-on-mobile">セットでのメニュー展開をしています。</h3>
+        <!-- <p class="text-center my-5"><a href="#" class="no-underline hover:underline hover:text-lime-700">お取り扱いサロン様はこちらから</a></p> -->
+        <!-- <p class="text-center my-8 bg-blue-500 font-semibold text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            <i class="fa-solid fa-caret-down"></i> お取り扱いサロン様はこちらから <i class="fa-solid fa-caret-down"></i>
+          </p>
+          <p class="text-center text-sm underline underline-offset-2">画像をクリック</p>
+          <div class="lg:w-4/5 md:5/6 sm:2/3 mx-auto py-5">
+            <div class="pc">
+              <a href="http://tokio.tokyo/"><img src="assets/images/tokio-tokyo-pc.png" alt="tokio.tokyo公式サイト" class="img-fluid"></a>
+            </div>
+            <div class="phone">
+              <a href="http://tokio.tokyo/phone/index.html"><img src="assets/images/tokio-tokyo-phone.png" alt="tokio.tokyo公式サイト" class="img-fluid"></a>
+            </div>
+          </div> -->
+
+      </div>
+    </div>
+  </div>
+  <div class="section-05 bg-slate-200 py-10">
+    <div class="container mx-auto">
+      <h2 class="text-center md:text-3xl sm:text-2xl">週に２回の<br>
+        <strong><ruby>ASIA<rt>アジア</rt></ruby> <ruby>INPITARI<rt>インピタリ</rt></ruby> <ruby>HOME<rt>ホーム</rt>
+            </ruby></strong><span>と</span><br>毎日のシャンプートリートメントで<br>
+        ダメージ知らずの髪質へ！
+      </h2>
+      <div class="lg:w-3/5 md:2/3 mx-auto py-5">
+        <img src="assets/images/asia inpitari-img01.jpg" alt="ASIA INPITARI アジアインピタリ" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://ifing-beauty.com"
+        class="hover:underline">IFING BEAUTY</a> All Rights Reserved.
+    </span>
+    <!-- <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6 ">会社概要</a>
+      </li>
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6">プライバシーポリシー</a>
+      </li>
+      <li>
+        <a href="#" class="hover:underline">お問合せ</a>
+      </li>
+    </ul> -->
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
