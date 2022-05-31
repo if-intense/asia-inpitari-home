@@ -27,6 +27,15 @@ body {
   text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
+.sect03 .sect03-title {
+  padding: 5px 0;
+}
+.sect03 .sect03-title h2 {
+  color: #c02f2f;
+  font-size: 1.25em;
+  text-align: center;
+}
+
 .section-02 {
   background-image: linear-gradient(90deg, #bdbdbd 3.57%, #ffffff 3.57%, #ffffff 50%, #bdbdbd 50%, #bdbdbd 53.57%, #ffffff 53.57%, #ffffff 100%);
   background-size: 28px 28px;

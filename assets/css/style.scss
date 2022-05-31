@@ -4,6 +4,10 @@ body {
     font-family: $main-font;
 }
 
+.carousel {
+
+}
+
 .break-on-mobile {
   display:none;
 }
@@ -37,6 +41,19 @@ body {
     }
 
 }
+
+.sect03 {
+  .sect03-title {
+    padding:5px 0;
+    h2 {
+      color:rgb(192, 47, 47);
+      font-size: 1.25em;
+      // font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
 
 .section-02 {
   background-image: linear-gradient(
